@@ -1,25 +1,25 @@
 .caculator-container {
     position: relative;
     width: 414px;
-    height: 896px;
+    height: 696px;
     margin: 0 auto;
 }
 .content-box {
     position: relative;
     background-color: #000000;
     max-width: 414px;
-    height: 896px;
+    height: 707px;
     border-radius: 18px;
     margin: 0 auto;
 }
 .content-buttons {
     position: relative;
-    top: 420px;
+    top: 230px;
     margin-left: 15px;
 }
 .input {
     position: absolute;
-    top: 351px;
+    top: 165px;
     left: 10px;
     outline: none;
     border: none;
