@@ -1,0 +1,13 @@
+// const input = document.querySelector('.input')
+// const znakC = document.querySelector('.c')
+// const procents = document.querySelector('.procetn')
+// const procent = document.querySelector('.procent')
+// const delenie = document.querySelector('.delenie')
+// const num7 = document.querySelector('')
+const buttons = document.querySelector('button')
+const buttonText = document.querySelector('.buttons-text')
+console.log(buttonText.textContent)
+buttons.addEventListener('click', () => {
+    let num = buttons.closest('p')
+    console.log(num.)
+})
