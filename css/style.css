@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 .caculator-container {
     position: relative;
     width: 414px;
@@ -69,7 +73,7 @@
 .buttons-text {
     position: relative;
     top: -2px;
-    left: -3px;
+    left: -6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,9 +88,11 @@
     margin: 0 auto;
 }
 .active {
+    transition: 0.1s;
     background-color: #ffffff;
 }
 .active-text {
+    transition: 0.1s;
     color: #ffa500;
 }
 @media screen and (max-width: 450px){

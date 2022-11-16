@@ -24,6 +24,14 @@ document.addEventListener('click', (event) => {
         sum = 'c'
         arr = []
         znakC.textContent = 'C'
+        buttonItem[3].classList.remove('active')
+        buttonText[3].classList.remove('active-text')
+        buttonItem[2].classList.remove('active')
+        buttonText[2].classList.remove('active-text')
+        buttonItem[0].classList.remove('active')
+        buttonText[0].classList.remove('active-text')
+        buttonItem[1].classList.remove('active')
+        buttonText[1].classList.remove('active-text')
     }
     nums.forEach(function(item,i) {
         if(nums[i].id === target.id) {
@@ -77,6 +85,7 @@ document.addEventListener('click', (event) => {
         znakC.textContent = 'AC'
     } else if (drob.id === target.id && input.selectionEnd > '0') {
         input.value = input.value + '.'
+
         znakC.textContent = 'AC'
     } else if (minus.id === target.id || input.selectionEnd === '0') {
         input.value = input.value + '-'
@@ -103,6 +112,5 @@ document.addEventListener('click', (event) => {
         } else if (sum === 'increase') {
             input.value = arr[num1] * arr[num2]
         }
-    }
-    
+    } 
 })
