@@ -111,6 +111,11 @@
     }
     .input {
         top: 145px;
-        left: 10px;
+        left: 10%;
+        width: 80%;
+    }
+    .buttons-text {
+        top: -5px;
+        left: -10px;
     }
 }

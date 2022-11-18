@@ -46,6 +46,12 @@ document.addEventListener('click', (event) => {
         sum = 'minus'
         buttonItem[2].classList.toggle('active')
         buttonText[2].classList.toggle('active-text')
+        buttonItem[3].classList.remove('active')
+        buttonText[3].classList.remove('active-text')
+        buttonItem[0].classList.remove('active')
+        buttonText[0].classList.remove('active-text')
+        buttonItem[1].classList.remove('active')
+        buttonText[1].classList.remove('active-text')
         znakC.textContent = 'AC'
     } else if (plus.id === target.id) {
         num = Number(input.value)
@@ -54,6 +60,12 @@ document.addEventListener('click', (event) => {
         sum = 'plus'
         buttonItem[3].classList.toggle('active')
         buttonText[3].classList.toggle('active-text')
+        buttonItem[2].classList.remove('active')
+        buttonText[2].classList.remove('active-text')
+        buttonItem[0].classList.remove('active')
+        buttonText[0].classList.remove('active-text')
+        buttonItem[1].classList.remove('active')
+        buttonText[1].classList.remove('active-text')
         znakC.textContent = 'AC'
     } else if (plusMinus.id === target.id) {
         num = Number(input.value)
@@ -74,6 +86,12 @@ document.addEventListener('click', (event) => {
         sum = 'delenie' 
         buttonItem[0].classList.toggle('active')
         buttonText[0].classList.toggle('active-text')
+        buttonItem[3].classList.remove('active')
+        buttonText[3].classList.remove('active-text')
+        buttonItem[2].classList.remove('active')
+        buttonText[2].classList.remove('active-text')
+        buttonItem[1].classList.remove('active')
+        buttonText[1].classList.remove('active-text')
         znakC.textContent = 'AC'
     } else if (umnoj.id === target.id) {
         num = Number(input.value)
@@ -82,10 +100,19 @@ document.addEventListener('click', (event) => {
         sum = 'increase'
         buttonItem[1].classList.toggle('active')
         buttonText[1].classList.toggle('active-text')
+        buttonItem[3].classList.remove('active')
+        buttonText[3].classList.remove('active-text')
+        buttonItem[2].classList.remove('active')
+        buttonText[2].classList.remove('active-text')
+        buttonItem[0].classList.remove('active')
+        buttonText[0].classList.remove('active-text')
         znakC.textContent = 'AC'
     } else if (drob.id === target.id && input.selectionEnd > '0') {
-        input.value = input.value + '.'
-
+        let valueText = input.value
+        const index = valueText.indexOf('.')
+        if(index === -1) {
+            input.value = input.value + '.'
+        }
         znakC.textContent = 'AC'
     } else if (minus.id === target.id || input.selectionEnd === '0') {
         input.value = input.value + '-'
@@ -112,5 +139,5 @@ document.addEventListener('click', (event) => {
         } else if (sum === 'increase') {
             input.value = arr[num1] * arr[num2]
         }
-    } 
+    }
 })
